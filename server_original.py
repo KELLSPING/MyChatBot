@@ -72,7 +72,7 @@ def main():
     #s.bind((IP, PORT))
     #s.bind(('', PORT))
     try:
-        s.bind(('192.168.86.39', PORT))
+        s.bind((IP, PORT))
         s.listen()
     except Exception as e:
         print('here fail')
