@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#chat-container {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#chat-messages {
+  padding: 10px;
+  overflow-y: scroll;
+  position: relative;
+  width: 95%;
+  height: 70%;
+}
+
+#input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 20%;
+}
+
+#message-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* 發送按鈕和圖片按鈕的樣式 */
+#btn-send-msg {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-send-audio {
+  padding: 8px 15px;
+  background-color: #4eb151;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#btn-send-audio.clicked {
+  background-color: #e74c3c; /* 按下後的顏色為紅色 */
+}
+
+/* 新增的圖片按鈕的樣式 */
+.icon {
+  width: 20px; /* 設定圖示寬度 */
+  height: 20px; /* 設定圖示高度 */
+}
+
+/* Media queries for responsive design */
+
+/* Small screens (600px and below) */
+@media screen and (max-width: 600px) {
+  #chat-container {
+    height: 50vh;
+  }
+  #message-input{
+    flex-basis: 70%;
+    font-size: 0.5em;
+  }
+  #btn-send-msg,
+  #btn-send-audio {
+    flex-basis: 20%;
+    font-size: 0.5em;
+  }
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+/* Medium screens (601px to 1080px) */
+@media screen and (min-width: 601px) and (max-width: 1080px) {
+  #chat-container {
+    height: 50vh;
+  }
+  #message-input{
+    flex-basis: 70%;
+    font-size: 1em;
+  }
+  #btn-send-msg,
+  #btn-send-audio {
+    flex-basis: 20%;
+    font-size: 1em;
+  }
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+/* Large screens (1081px and above) */
+@media screen and (min-width: 1081px) {
+  #chat-container {
+    height: 50vh;
+  }
+  #message-input{
+    flex-basis: 70%;
+    font-size: 1.5em;
+  }
+  #btn-send-msg,
+  #btn-send-audio {
+    flex-basis: 20%;
+    font-size: 1.5em;
+  }
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
