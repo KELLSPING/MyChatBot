@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+
+    <!-- import CSS file -->
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <!-- Choose Language -->
+    <label for="dropdown">Choose Language</label>
+    <select id="dropdown" name="dropdown">
+        <option value="" disabled selected hidden>Language</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="zh-tw">Traditional Chinese</option>
+        <option value="zh_cn">Simplified Chinese</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+    </select>
+
+    <br>
+
+    <!-- Input User Name -->
+    <label for="nameInput">Input Name</label>
+    <input type="text" id="nameInput" placeholder="Name">
+
+    <!-- Web Page Redirect -->
+    <button onclick="checkAndRedirect()">Commit</button>
+
+    <!-- import JS file -->
+    <script type="text/javascript" src="./login.js"></script>
+
+</body>
+
+</html>

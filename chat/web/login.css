@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+option[hidden] {
+    color: gray;
+}
+
+
+
+@media (min-width: 600px) {
+    /* Apply different styles for larger screens if needed */
+    body {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Page</title>
+</head>
+<body>
+
+<script>
+    // 从 URL 中获取查询参数
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedOption = urlParams.get('selectedOption');
+    const textInputValue = urlParams.get('textInputValue');
+
+    // 在页面中显示获取到的值
+    document.body.innerHTML = `<h1>Another Page</h1>
+                               <p>Selected Option: ${selectedOption}</p>
+                               <p>Text Input Value: ${textInputValue}</p>`;
+</script>
+
+</body>
+</html>
