@@ -5,38 +5,26 @@ import tkinter
 import tkinter.messagebox
 from tkinter.scrolledtext import ScrolledText
 import os
-
 import speech_recognition as sr
 import time
-
 from googletrans import Translator
-
 from tkinter import ttk
-
-
 from gtts import gTTS
 from pygame import mixer
 import tempfile
-
 # generate WAV
 import pyaudio
 import wave
-
 #image
 import base64
 import eel
-
 import json
-
 import random
 
 tempMsg = ''
 tempAudio = 0
 
-
 language_list = ['en','ja','zh-tw','zh-cn','ko','es']
-
-
 
 import firebase_admin
 from firebase_admin import credentials
